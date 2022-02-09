@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Clase 04 - Formularios</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <h1>Clase 04 - Formularios HTML</h1>
+    <form>
+        Email: <input type="text" id="email" name="email" size="50" value="usuario@dominio.com" />
+        <br />
+        Password: <input type="password" id="clave" name="clave" size="20" value="escribir algo" />
+        <br />
+        <input type="checkbox" id="condiciones" name="condiciones" checked="checked" />
+        Está de acuerdo con las condiciones explicadas más arriba.
+        <br />
+        <h3>Múltiples Checkbox de una misma categoría</h3>
+
+        Qué lenguaje desea aprender?
+        <br />
+        <input type="checkbox" name="lenguaje">HTML
+        <input type="checkbox" name="lenguaje">Javascript
+        <input type="checkbox" name="lenguaje" value="css">CSS
+        <input type="checkbox" name="lenguaje" value="xml">XML
+
+        <br />
+        <h3>Radio</h3>
+        <input type="radio" id="identificador" value="valor" name="nombre" />Opción 1
+        <br />
+        <br />
+
+        Seleccione su edad
+        <br />
+        <input type="radio" id="menos18" value="menos18" name="edad" />Menos de 18
+        <input type="radio" id="18a30" value="18a30" name="edad" />18 a 30
+        <input type="radio" id="31a50" value="31a50" name="edad" />31 a 50
+        <input type="radio" id="mas50" value="mas50" name="edad" />Más de 50
+
+        <br /><br />
+        Subir foto personal:
+        <input type="file" id="identificador" value="valor" name="nombre" />
+
+        <br /><br />
+        <input type="hidden" id="identificador" value="valor" name="nombre" />
+
+        <br /><br />
+        <input type="image" src="ave.gif" name="nombre" alt="texto-alternativo" />
+
+        <br />
+        <h3>Textarea</h3>
+        <textarea rows="5" cols="40" name="comentario">Escriba su comentario en esta area...</textarea>
+
+        <br />
+        <h3>Combobox (Select y Option)</h3>
+
+        Cuál es su equipo favorito?
+        <select>
+            <option>Arsenal</option>
+            <option>Chelsea</option>
+            <option selected="selected">Everton</option>
+            <option>Liverpool</option>
+            <option>Manchester United</option>
+        </select>
+
+        <h3>Opciones agrupadas</h3>
+        Elija su destino:
+        <select name="ciudad">
+            <optgroup label="Europa">
+                <option>Madrid</option>
+                <option>Londres</option>
+                <option>Paris</option>
+            </optgroup>
+            <optgroup label="América">
+                <option>San Salvador</option>
+                <option>Sao Paulo</option>
+                <option>Lima</option>
+                <option>Los Angeles</option>
+            </optgroup>
+            <optgroup label="Africa">
+                <option>Casablanca</option>
+                <option>Ciudad del Cabo</option>
+            </optgroup>
+        </select>
+
+        <h3>Botones</h3>
+
+        Boton normal --> <input type="button" value="Presioname"/>
+        <br/>
+        Boton submit --> <input type="submit" value="Enviar Información"/>
+        <br/>
+        Boton reset ---> <input type="reset" value="Limpiar Formulario"/>
+
+        <br/><br/>
+        Boton independiente -->
+        <button name="nombre" type="TipoBoton" value="ValorBoton">
+            Tap Me!
+        </button>
+        <br />
+        <br />
+        <br />
+    </form>
+</body>
+
+</html>
